@@ -2,7 +2,7 @@ package Steps;
 
 import Base.BaseUtil;
 import cucumber.api.java.Before;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Hook extends BaseUtil {
 
@@ -15,10 +15,10 @@ public class Hook extends BaseUtil {
     @Before
     public void Initialize() {
 
-        //System.setProperty("webdriver.chrome.driver", "/Users/semin.palalic/Desktop/chromedriver");
-        //webDriver = new ChromeDriver();
-        System.setProperty("webdriver.tor.driver", "/Users/semin.palalic/Desktop/geckodriver");
-        webDriver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/semin.palalic/Desktop/chromedriver");
+        webDriver = new ChromeDriver();
+        //System.setProperty("webdriver.tor.driver", "/Users/semin.palalic/Desktop/geckodriver");
+        //webDriver = new FirefoxDriver();
 
     }
 
